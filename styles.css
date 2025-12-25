@@ -1,0 +1,156 @@
+/* ================= GLOBAL ================= */
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(120deg, #4facfe, #00f2fe);
+  min-height: 100vh;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #4facfe;
+  color: white;
+  padding: 15px 25px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.navbar button {
+  background: white;
+  color: #4facfe;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ================= LAYOUT ================= */
+.container {
+  padding: 20px;
+}
+
+.page-center {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-layout {
+  display: flex;
+  justify-content: center;
+}
+
+/* ================= CARD ================= */
+.card {
+  background: white;
+  width: 340px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ================= INPUTS ================= */
+input,
+select {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #4facfe;
+}
+
+/* ================= BUTTONS ================= */
+button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  background: #4facfe;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #379df6;
+}
+
+/* ================= REPORT LIST ================= */
+.report-item {
+  background: #f4f7fa;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+/* ================= DASHBOARD ================= */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  align-items: stretch;
+}
+
+.stat-card {
+  background: white;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 14px;
+  height: 90px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stat-card b {
+  font-size: 18px;
+  margin-top: 5px;
+  display: block;
+}
+
+/* ================= QUICK ACTIONS ================= */
+.actions a {
+  display: block;
+  margin-top: 10px;
+  padding: 10px;
+  background: #4facfe;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.actions a:hover {
+  background: #379df6;
+}
